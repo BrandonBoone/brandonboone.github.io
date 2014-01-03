@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css' />
+		<link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css' />
+		<link rel='stylesheet' href='https://raw.github.com/BrandonBoone/XMLToHTML/master/XMLtoHTML.css' />
+	</head>
+	<body>
+		<h1>XMLToHTML</h1>
+
+		<h2>JavaScript</h2>
+		<pre class="prettyprint">
+			$(function(){
+				$('#results').html(XMLtoHTML($('#myXML').html())); 	
+			});	
+		</pre>
+
+		<h2>Results</h2>
+		<div id='results'>
+
+		</div>
+	</body>
+	<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+	<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js'></script>
+	<script type='text/javascript' src='https://raw.github.com/BrandonBoone/XMLToHTML/master/XMLtoHTML.js'></script>
+	<script type='text/javascript'>
+		$(function(){
+			$('#results').html(XMLtoHTML($('#myXML').html())); 	
+		});		
+	</script>
+	<script type='text/html' id='myXML'>
+	    <topNode>
+	        <!-- My comment-->
+	        <item myattribute='test' anotherone='hello world'>
+	            <innerNode>Test</innerNode>
+	            <nestedNode>
+	                
+	            </nestedNode>
+	        </item>
+	        <item>
+	            <innerNode>Test</innerNode>
+	            <nestedNode>
+	                <item>
+	                    <innerNode>Test</innerNode>
+	                    <nestedNode>
+	                        
+	                    </nestedNode>
+	                </item>
+	                <item>
+	                    <innerNode>Test</innerNode>
+	                    <nestedNode>
+	                        <item>
+	                            <innerNode>Test</innerNode>
+	                            <nestedNode>
+	                                
+	                            </nestedNode>
+	                        </item>
+	                    </nestedNode>
+	                </item>
+	            </nestedNode>
+	        </item>
+	    </topNode>
+	</script>
+</html>	
