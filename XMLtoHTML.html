@@ -1,63 +1,64 @@
 ---
 layout: master
 title: XMLtoHTML
+script: |
+	<script type='text/javascript' src='https://rawgithub.com/BrandonBoone/XMLToHTML/master/XMLtoHTML.js'></script>
+	<script type='text/javascript'>
+		$(function(){
+			prettyPrint();
+			$('#results').html(XMLtoHTML($('#myXML').html())); 	
+		});		
+	</script>
+	<script type='text/html' id='myXML'>
+	    <topNode>
+	        <!-- My comment-->
+	        <item myattribute='test' anotherone='hello world'>
+	            <innerNode>Test</innerNode>
+	            <nestedNode>
+	                
+	            </nestedNode>
+	        </item>
+	        <item>
+	            <innerNode>Test</innerNode>
+	            <nestedNode>
+	                <item>
+	                    <innerNode>Test</innerNode>
+	                    <nestedNode>
+	                        
+	                    </nestedNode>
+	                </item>
+	                <item>
+	                    <innerNode>Test</innerNode>
+	                    <nestedNode>
+	                        <item>
+	                            <innerNode>Test</innerNode>
+	                            <nestedNode>
+	                                
+	                            </nestedNode>
+	                        </item>
+	                    </nestedNode>
+	                </item>
+	            </nestedNode>
+	        </item>
+	    </topNode>
+	</script>
 ---
 
-<div class="starter-template">
-	<p>A lightweight utility for pretty printing XML. <a href='https://github.com/BrandonBoone/XMLToHTML'>View the source code on GidHub</a> or <a rel='nofollow' href='https://github.com/BrandonBoone/XMLToHTML/archive/v1.0.0.zip'>download (zip)</a></p>
 
-	<h3><a href='https://github.com/BrandonBoone/XMLToHTML#overview'>Full Documentation</a></h3>
+<p>A lightweight utility for pretty printing XML. <a href='https://github.com/BrandonBoone/XMLToHTML'>View the source code on GidHub</a> or <a rel='nofollow' href='https://github.com/BrandonBoone/XMLToHTML/archive/v1.0.0.zip'>download (zip)</a></p>
 
-	<h4><span class='anchor' id="headerJS"></span>JavaScript</h4>
-	<pre class="prettyprint">
+<h3><a href='https://github.com/BrandonBoone/XMLToHTML#overview'>Full Documentation</a></h3>
+
+<h4><span class='anchor' id="headerJS"></span>JavaScript</h4>
+<pre class="prettyprint">
 $(function(){
 $('#results').html(XMLtoHTML($('#myXML').html())); 	
 });	
-	</pre>
+</pre>
 
-	<h4><span class='anchor' id="headerResults"></span>Results</h4>
-	<div id='results'>
+<h4><span class='anchor' id="headerResults"></span>Results</h4>
+<div id='results'>
 
-	</div>
-</div>		
+</div>
 
-<script type='text/javascript' src='https://rawgithub.com/BrandonBoone/XMLToHTML/master/XMLtoHTML.js'></script>
-<script type='text/javascript'>
-	$(function(){
-		prettyPrint();
-		$('#results').html(XMLtoHTML($('#myXML').html())); 	
-	});		
-</script>
-<script type='text/html' id='myXML'>
-    <topNode>
-        <!-- My comment-->
-        <item myattribute='test' anotherone='hello world'>
-            <innerNode>Test</innerNode>
-            <nestedNode>
-                
-            </nestedNode>
-        </item>
-        <item>
-            <innerNode>Test</innerNode>
-            <nestedNode>
-                <item>
-                    <innerNode>Test</innerNode>
-                    <nestedNode>
-                        
-                    </nestedNode>
-                </item>
-                <item>
-                    <innerNode>Test</innerNode>
-                    <nestedNode>
-                        <item>
-                            <innerNode>Test</innerNode>
-                            <nestedNode>
-                                
-                            </nestedNode>
-                        </item>
-                    </nestedNode>
-                </item>
-            </nestedNode>
-        </item>
-    </topNode>
-</script>
+
