@@ -4,43 +4,40 @@ title: XMLtoHTML
 script: |
 	<script type='text/javascript' src='https://rawgithub.com/BrandonBoone/XMLToHTML/master/XMLtoHTML.js'></script>
 	<script type='text/javascript'>
-		$(function(){
-			prettyPrint();
-			$('#results').html(XMLtoHTML($('#myXML').html())); 	
-		});		
+	$(function(){
+	prettyPrint();
+	$('#results').html(XMLtoHTML($('#myXML').html())); 	
+	});		
 	</script>
 	<script type='text/html' id='myXML'>
-	    <topNode>
-	        <!-- My comment-->
-	        <item myattribute='test' anotherone='hello world'>
-	            <innerNode>Test</innerNode>
-	            <nestedNode>
-	                
-	            </nestedNode>
-	        </item>
-	        <item>
-	            <innerNode>Test</innerNode>
-	            <nestedNode>
-	                <item>
-	                    <innerNode>Test</innerNode>
-	                    <nestedNode>
-	                        
-	                    </nestedNode>
-	                </item>
-	                <item>
-	                    <innerNode>Test</innerNode>
-	                    <nestedNode>
-	                        <item>
-	                            <innerNode>Test</innerNode>
-	                            <nestedNode>
-	                                
-	                            </nestedNode>
-	                        </item>
-	                    </nestedNode>
-	                </item>
-	            </nestedNode>
-	        </item>
-	    </topNode>
+	<topNode>
+	<!-- My comment-->
+	<item myattribute='test' anotherone='hello world'>
+	<innerNode>Test</innerNode>
+	<nestedNode>
+	</nestedNode>
+	</item>
+	<item>
+	<innerNode>Test</innerNode>
+	<nestedNode>
+	<item>
+	<innerNode>Test</innerNode>
+	<nestedNode>
+	</nestedNode>
+	</item>
+	<item>
+	<innerNode>Test</innerNode>
+	<nestedNode>
+	<item>
+	<innerNode>Test</innerNode>
+	<nestedNode>
+	</nestedNode>
+	</item>
+	</nestedNode>
+	</item>
+	</nestedNode>
+	</item>
+	</topNode>
 	</script>
 ---
 
