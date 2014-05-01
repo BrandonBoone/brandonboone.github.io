@@ -11,8 +11,12 @@
 	bottom: 0px;
 }
 
+.post{
+	border-bottom:3px dashed black;
+}
+
 p{
-	padding: 40px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
 }
 
 body { 
