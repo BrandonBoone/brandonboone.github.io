@@ -3,11 +3,13 @@ layout: post
 title: The Anti-Process
 ---
 
-Let me introduce you to the Anti-Process.
+###Let me introduce you to the Anti-Process.
 
 ![AntiProcess](/images/AntiProcess.png)
 
-At its most base definition it would be, "Any process that cycles from adherence to dismissal based on enforcement convenience." 
+At its most base definition it would be:
+
+>Any process that cycles from adherence to dismissal based on enforcement convenience.
 
 The wonderful joy of working with such a process is that at any moment, the rules of enforcement change. 
 
