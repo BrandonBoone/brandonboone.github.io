@@ -1,0 +1,24 @@
+.starter-template {
+	padding: 50px 15px;
+	border: 1px solid #ccc;
+	padding: 5px;
+	box-shadow: 0px 0px 100px #888;
+}
+
+.navbar-fixed-bottom span{ 
+	vertical-align: bottom;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+
+p{
+	padding: 40px 0px 0px 0px;
+}
+
+body { 
+	padding-bottom: 70px; 
+}
+
+
+span.anchor{display: block; position: relative; top: -60px; visibility: hidden;}
