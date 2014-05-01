@@ -5,7 +5,7 @@ title: The Anti-Process
 
 ###Let me introduce you to the Anti-Process.
 
-![AntiProcess](/images/AntiProcess.png)
+<img src='/images/AntiProcess.png' class='img-responsive' alt="Responsive image" />
 
 At its most base definition it would be:
 
