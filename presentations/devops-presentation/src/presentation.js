@@ -12,8 +12,17 @@ import {
   Quote,
   Slide,
   Text,
+  Appear
 } from 'spectacle';
 
+import img_born from './images/born.png';
+import img_winner from './images/winner.png';
+import img_journey from './images/journey.png';
+import img_factory from './images/factory.png';
+import img_shock from './images/shock.png';
+import img_ballMachine from './images/ballMachine.gif';
+import img_accept from './images/accept.png';
+import img_reject from './images/reject.png';
 // Import theme
 import createTheme from 'spectacle/lib/themes/default';
 
@@ -33,6 +42,21 @@ const theme = createTheme(
   }
 );
 
+const imageStyle ={
+  width:'50%',
+  height:'auto'
+};
+
+const imageStyle2 ={
+  width:'25%',
+  height:'auto'
+};
+
+const imageStyle3 ={
+  width:'75%',
+  height:'auto'
+};
+
 export default class Presentation extends React.Component {
   render() {
     return (
@@ -46,15 +70,79 @@ export default class Presentation extends React.Component {
             DevOps
           </Heading>
           <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-          “Even more important than daily work is the improvement of daily work.”
+          A story in IV Acts
           </Text>
-          <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by Cornecoba - Freepik.com</a>
         </Slide>
-        <Slide transition={['zoom']} bgColor="primary">
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-          "“Eliyahu M. Goldratt, who created the Theory of Constraints, showed us how any improvements made anywhere besides the bottleneck are an illusion."
-          The Phoenix Project
-          </Text>
+        <Slide transition={['fade']} bgColor="primary">
+          <Heading size={2} lineHeight={1} textColor="secondary">
+            Act I
+          </Heading>
+          <Heading size={4} lineHeight={1} textColor="tertiary">
+            Inception
+          </Heading>
+          <Cite>The birth of an idea</Cite>
+          <Appear>
+          <img src={img_born} style={imageStyle} />
+          </Appear>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <Heading size={6} textColor="secondary" caps>
+            From inception to delivery
+          </Heading>
+          <List>
+            <Appear><ListItem><i clasclassNames="fas fa-user-circle"></i> People</ListItem></Appear>
+            <Appear><ListItem><i className="fas fa-dollar-sign"></i> Money</ListItem></Appear>
+            <Appear><ListItem><i className="fas fa-wrench"></i> Tools</ListItem></Appear>
+            <Appear><ListItem><i className="fas fa-clock"></i> Time</ListItem></Appear>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <img src={img_accept} style={imageStyle} />
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <img src={img_reject} style={imageStyle} />
+        </Slide>
+        <Slide transition={['zoom']} bgColor="secondary">
+          <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
+            Team Wizbang Wins!
+          </Heading>
+          <img src={img_winner} style={imageStyle2} />
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <Heading size={2} lineHeight={1} textColor="secondary">
+            Act II
+          </Heading>
+          <Heading size={4} lineHeight={1} textColor="tertiary">
+            An journey begins
+          </Heading>
+          <img src={img_journey} style={imageStyle} />
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <img src={img_factory} style={imageStyle3} />
+        </Slide>
+        <Slide transition={['zoom']} bgColor="secondary">
+          <img src={img_shock} style={imageStyle3} />
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <Heading size={2} lineHeight={1} textColor="secondary">
+            Act III
+          </Heading>
+          <Heading size={4} lineHeight={1} textColor="tertiary">
+            Metamorphosis
+          </Heading>
+          <img src={img_journey} style={{
+              width:'25px',
+              height:'auto',
+              marginRight:'5px'
+            }} 
+          />
+          <img src={img_ballMachine} style={imageStyle} />
+        </Slide>
+        <Slide transition={['fade']} bgColor="secondary" textColor="primary">
+          <BlockQuote>
+            <Quote>Even more important than daily work is the improvement of daily work.</Quote>
+            <Cite>Gene Kim</Cite>
+          </BlockQuote>
         </Slide>
         <Slide transition={['zoom']} bgColor="primary">
           <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
@@ -175,6 +263,22 @@ export default class Presentation extends React.Component {
             <Cite>Author</Cite>
           </BlockQuote>
         </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            Credits
+          </Heading>
+          <List>
+            <ListItem>Brain by BomSymbols from the Noun Project</ListItem>
+            <ListItem>Backpack by Joost from the Noun Project</ListItem>
+            <ListItem>hat by Hycan from the Noun Project</ListItem>
+            <ListItem>Factory by Isabel Martínez Isabel from the Noun Project</ListItem>
+            <ListItem>blue ball machine gif by KeyserSosa</ListItem>
+            <ListItem>palm by Kevin from the Noun Project</ListItem>
+            <ListItem>Fist by Mahmure Alp from the Noun Project</ListItem>
+            <ListItem>dead by Ben Davis from the Noun Project</ListItem>
+          </List>
+        </Slide>
+        
       </Deck>
     );
   }
