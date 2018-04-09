@@ -23,6 +23,14 @@ import img_shock from './images/shock.png';
 import img_ballMachine from './images/ballMachine.gif';
 import img_accept from './images/accept.png';
 import img_reject from './images/reject.png';
+import img_time from './images/time.png';
+import img_machine1 from './images/machine1.png';
+import img_machine2 from './images/machine2.png';
+import img_machine3 from './images/machine3.png';
+import img_machine4 from './images/machine4.png';
+import img_machine5 from './images/machine5.png';
+import img_machine6 from './images/machine6.png';
+import img_machine7 from './images/machine7.png';
 // Import theme
 import createTheme from 'spectacle/lib/themes/default';
 
@@ -90,10 +98,9 @@ export default class Presentation extends React.Component {
             From inception to delivery
           </Heading>
           <List>
-            <Appear><ListItem><i clasclassNames="fas fa-user-circle"></i> People</ListItem></Appear>
-            <Appear><ListItem><i className="fas fa-dollar-sign"></i> Money</ListItem></Appear>
-            <Appear><ListItem><i className="fas fa-wrench"></i> Tools</ListItem></Appear>
-            <Appear><ListItem><i className="fas fa-clock"></i> Time</ListItem></Appear>
+            <Appear><ListItem>People</ListItem></Appear>
+            <Appear><ListItem>Money</ListItem></Appear>
+            <Appear><ListItem>Tools</ListItem></Appear>
           </List>
         </Slide>
         <Slide transition={['fade']} bgColor="primary">
@@ -102,26 +109,73 @@ export default class Presentation extends React.Component {
         <Slide transition={['fade']} bgColor="primary">
           <img src={img_reject} style={imageStyle} />
         </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <img src={img_time} style={imageStyle3} />
+        </Slide>
         <Slide transition={['zoom']} bgColor="secondary">
           <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
-            Team Wizbang Wins!
+            Team Blockchain Wins!
           </Heading>
           <img src={img_winner} style={imageStyle2} />
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <Heading size={6} textColor="secondary" caps>
+            Before we start...
+          </Heading>
+          <List>
+            <Appear><ListItem>Get Funding <i class="far fa-clock"></i></ListItem></Appear>
+            <Appear><ListItem>Assign a Team <i class="far fa-clock"></i></ListItem></Appear>
+            <Appear><ListItem>Study Product Market Fit <i class="far fa-clock"></i></ListItem></Appear>
+            <Appear><ListItem>Choose the Technology <i class="far fa-clock"></i></ListItem></Appear>
+            <Appear><ListItem>Architect the Things <i class="far fa-clock"></i></ListItem></Appear>
+            <Appear><ListItem>Get Approvals  <i class="far fa-clock"></i></ListItem></Appear>
+            <Appear><ListItem>[Insert Other Process]  <i class="far fa-clock"></i><i class="far fa-clock"></i><i class="far fa-clock"></i><i class="far fa-clock"></i><i class="far fa-clock"></i></ListItem></Appear>
+          </List>
         </Slide>
         <Slide transition={['fade']} bgColor="primary">
           <Heading size={2} lineHeight={1} textColor="secondary">
             Act II
           </Heading>
           <Heading size={4} lineHeight={1} textColor="tertiary">
-            An journey begins
+            A journey begins
           </Heading>
-          <img src={img_journey} style={imageStyle} />
+          <img src={img_journey} style={imageStyle2} />
         </Slide>
         <Slide transition={['fade']} bgColor="primary">
-          <img src={img_factory} style={imageStyle3} />
+          <img src={img_factory} style={imageStyle} />
         </Slide>
         <Slide transition={['zoom']} bgColor="secondary">
           <img src={img_shock} style={imageStyle3} />
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <img src={img_journey} style={{
+              width:'25px',
+              height:'auto',
+              marginRight:'5px'
+            }} 
+          />
+          <img src={img_ballMachine} style={imageStyle} />
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <img src={img_machine1} style={imageStyle} />
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <img src={img_machine2} style={imageStyle} />
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <img src={img_machine3} style={imageStyle} />
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <img src={img_machine4} style={imageStyle} />
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <img src={img_machine5} style={imageStyle} />
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <img src={img_machine6} style={imageStyle} />
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <img src={img_machine7} style={imageStyle} />
         </Slide>
         <Slide transition={['fade']} bgColor="primary">
           <Heading size={2} lineHeight={1} textColor="secondary">
@@ -276,6 +330,12 @@ export default class Presentation extends React.Component {
             <ListItem>palm by Kevin from the Noun Project</ListItem>
             <ListItem>Fist by Mahmure Alp from the Noun Project</ListItem>
             <ListItem>dead by Ben Davis from the Noun Project</ListItem>
+            <ListItem>Time by Nikita Kozin from the Noun Project</ListItem>
+            <ListItem>robot assembly line by Eucalyp from the Noun Project</ListItem>
+            <ListItem>Assembly machine by Becris from the Noun Project</ListItem>
+            <ListItem>Top Hat by Andrea Mazzini from the Noun Project</ListItem>
+            <ListItem>beard by Felipe Alvarado from the Noun Project</ListItem>
+            <ListItem>Machine by Dinosoft Labs from the Noun Project</ListItem>
           </List>
         </Slide>
         
