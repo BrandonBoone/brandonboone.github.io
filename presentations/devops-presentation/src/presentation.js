@@ -211,6 +211,7 @@ export default class Presentation extends React.Component {
             <Appear><ListItem>Lint on Change</ListItem></Appear>
             <Appear><ListItem>Test on Change</ListItem></Appear>
             <Appear><ListItem>Release on Checkin</ListItem></Appear>
+            <Appear><ListItem>Feature flags over branches</ListItem></Appear>
             <Appear><ListItem>Treat Infrastructure as Code</ListItem></Appear>
             <Appear><ListItem>Deploy Immutable Infrastructure</ListItem></Appear>
             <Appear><ListItem>Monitor usage</ListItem></Appear>
