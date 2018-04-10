@@ -31,6 +31,11 @@ import img_machine4 from './images/machine4.png';
 import img_machine5 from './images/machine5.png';
 import img_machine6 from './images/machine6.png';
 import img_machine7 from './images/machine7.png';
+import img_machine8 from './images/machine8.png';
+import img_machine9 from './images/machine9.png';
+import img_machine10 from './images/machine10.png';
+import img_firstWay from './images/firstWay.png';
+import img_sleep from './images/sleep.png';
 // Import theme
 import createTheme from 'spectacle/lib/themes/default';
 
@@ -88,7 +93,6 @@ export default class Presentation extends React.Component {
           <Heading size={4} lineHeight={1} textColor="tertiary">
             Inception
           </Heading>
-          <Cite>The birth of an idea</Cite>
           <Appear>
           <img src={img_born} style={imageStyle} />
           </Appear>
@@ -132,12 +136,18 @@ export default class Presentation extends React.Component {
             <Appear><ListItem>[Insert Other Process]  <i class="far fa-clock"></i><i class="far fa-clock"></i><i class="far fa-clock"></i><i class="far fa-clock"></i><i class="far fa-clock"></i></ListItem></Appear>
           </List>
         </Slide>
+        <Slide transition={['fade']} bgColor="secondary" textColor="primary">
+          <BlockQuote>
+            <Quote>DevOps, ...the process required to convert a business hypothesis into a technology-enabled service that delivers value to the customer.</Quote>
+            <Cite>The Devops Handbook</Cite>
+          </BlockQuote>
+        </Slide>
         <Slide transition={['fade']} bgColor="primary">
           <Heading size={2} lineHeight={1} textColor="secondary">
             Act II
           </Heading>
           <Heading size={4} lineHeight={1} textColor="tertiary">
-            A journey begins
+            Journey
           </Heading>
           <img src={img_journey} style={imageStyle2} />
         </Slide>
@@ -163,34 +173,28 @@ export default class Presentation extends React.Component {
           <img src={img_machine2} style={imageStyle} />
         </Slide>
         <Slide transition={['fade']} bgColor="primary">
-          <img src={img_machine3} style={imageStyle} />
+          <img src={img_machine3} style={imageStyle3} />
         </Slide>
         <Slide transition={['fade']} bgColor="primary">
-          <img src={img_machine4} style={imageStyle} />
+          <img src={img_machine4} style={imageStyle3} />
         </Slide>
         <Slide transition={['fade']} bgColor="primary">
-          <img src={img_machine5} style={imageStyle} />
+          <img src={img_machine5} style={imageStyle3} />
         </Slide>
         <Slide transition={['fade']} bgColor="primary">
-          <img src={img_machine6} style={imageStyle} />
+          <img src={img_machine6} style={imageStyle3} />
         </Slide>
         <Slide transition={['fade']} bgColor="primary">
-          <img src={img_machine7} style={imageStyle} />
+          <img src={img_machine7} style={imageStyle3} />
         </Slide>
         <Slide transition={['fade']} bgColor="primary">
-          <Heading size={2} lineHeight={1} textColor="secondary">
-            Act III
-          </Heading>
-          <Heading size={4} lineHeight={1} textColor="tertiary">
-            Metamorphosis
-          </Heading>
-          <img src={img_journey} style={{
-              width:'25px',
-              height:'auto',
-              marginRight:'5px'
-            }} 
-          />
-          <img src={img_ballMachine} style={imageStyle} />
+          <img src={img_machine8} style={imageStyle3} />
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <img src={img_machine9} style={imageStyle3} />
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <img src={img_machine10} style={imageStyle3} />
         </Slide>
         <Slide transition={['fade']} bgColor="secondary" textColor="primary">
           <BlockQuote>
@@ -198,123 +202,126 @@ export default class Presentation extends React.Component {
             <Cite>Gene Kim</Cite>
           </BlockQuote>
         </Slide>
-        <Slide transition={['zoom']} bgColor="primary">
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-          “Mike Rother says that it almost doesn’t matter what you improve, as long as you’re improving something. Why? Because if you are not improving, entropy guarantees that you are actually getting worse, which ensures that there is no path to zero errors, zero work-related accidents, and zero loss.”
-          The Phoenix Project
-          </Text>
-        </Slide>
-        <Slide transition={['zoom']} bgColor="primary">
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-          In DevOps, we typically define our technology value stream as the process required to convert a business hypothesis into a technology-enabled service that delivers value to the customer.
-          </Text>
-        </Slide>
-        <Slide transition={['zoom']} bgColor="primary">
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-          because of how interdependent our systems are, our ability to make changes to any of these systems is limited by the system that is most difficult to safely change,
-          </Text>
-        </Slide>
-        <Slide transition={['zoom']} bgColor="primary">
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-          reduce hardship and drudgery in our daily work through continual learning in order to achieve the organization’s goals.
-          </Text>
-        </Slide>
-        <Slide transition={['zoom']} bgColor="primary">
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-          “It’s impossible for a developer to learn anything when someone yells at them for something they broke six months ago—that’s why we need to provide feedback to everyone as quickly as possible, in minutes, not months.”
-          </Text>
-        </Slide>
-        <Slide transition={['zoom']} bgColor="primary">
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-          suggestions for improvement “apt to meet a brick wall of indifference.”
-          </Text>
-        </Slide>
-        <Slide transition={['zoom']} bgColor="primary">
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-          Teams are often not able or not willing to improve the processes they operate within. The result is not only that they continue to suffer from their current problems, but their suffering also grows worse over time.
-          </Text>
-        </Slide>
-        <Slide transition={['zoom']} bgColor="primary">
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-          In the technology value stream, we can introduce the same type of tension into our systems by seeking to always reduce deployment lead times, increase test coverage, decrease test execution times, and even by re-architecting if necessary to increase developer productivity or increase reliability.
-          </Text>
-        </Slide>
-        <Slide transition={['zoom']} bgColor="primary">
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Where to Start?
-          </Heading>
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-          avoid the big bang approach (i.e., starting everywhere all at once), choosing instead to focus our efforts in a few areas of the organization,
-          </Text>
-        </Slide>
-        <Slide transition={['zoom']} bgColor="primary">
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-          Organizations that struggle with financial debt only make interest payments and never reduce the loan principal, and may eventually find themselves in situations where they can no longer service the interest payments. Similarly, organizations that don’t pay down technical debt can find themselves so burdened with daily workarounds for problems left unfixed that they can no longer complete any new work.
-          </Text>
-        </Slide>
-
-        <Slide transition={['zoom']} bgColor="primary">
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-          "Left unchecked, technical debt will ensure that the only work that gets done is unplanned work!”
-          The Phoenix Project
-          </Text>
-        </Slide>
-        <Slide transition={['zoom']} bgColor="primary">
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-          Measuring Effectiveness
-
-          *Deployment Frequency* - How often you release software. Should not be constrained by Development or Operations but by simply stating your desired release cycle. Monthly, Weekly, Daily, Hourly, all the way down to every checkin. As _mean time to recover_ gets lower, frequency and confidence in deployments gets higher since risk is mitigated.
-
-          *Lead time for changes* - The time it takes for a bug fix, new feature or any other change to go from idea to deployment to production. The lower the better.
-
-          > The fact is that IT is changing faster than ever as businesses get more competitive and as disruptive new technologies come from every corner. Microsoft is under tremendous customer pressure to deliver new features, and to deliver them fast. Smaller, more frequent releases will let Microsoft target today’s problems today, rather than always being a bit behind the curve.
-
-          *Mean time to recover*. - The time it takes to recover from a production failure.
-
-          > If your system goes down several times in a year, but recovery takes a minute or seconds, then your customer may not care and may not even notice. If your system goes down once a year for an entire day, then you may lose that customer.
-
-          *Change failure rate* - The percentage of failed deployments. The failure rate should be continually trending down toward 0% over time. (edited)
-
-          </Text>
-        </Slide>
-        <Slide transition={['fade']} bgColor="tertiary">
-          <Heading size={6} textColor="primary" caps>
-            Typography
-          </Heading>
-          <Heading size={1} textColor="secondary">
-            Heading 1
-          </Heading>
-          <Heading size={2} textColor="secondary">
-            Heading 2
-          </Heading>
-          <Heading size={3} textColor="secondary">
-            Heading 3
-          </Heading>
-          <Heading size={4} textColor="secondary">
-            Heading 4
-          </Heading>
-          <Heading size={5} textColor="secondary">
-            Heading 5
-          </Heading>
-          <Text size={6} textColor="secondary">
-            Standard text
-          </Text>
-        </Slide>
-        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+        <Slide transition={['fade']} bgColor="primary">
           <Heading size={6} textColor="secondary" caps>
-            Standard List
+            Examples
           </Heading>
           <List>
-            <ListItem>Item 1</ListItem>
-            <ListItem>Item 2</ListItem>
-            <ListItem>Item 3</ListItem>
-            <ListItem>Item 4</ListItem>
+            <Appear><ListItem>Build on Change</ListItem></Appear>
+            <Appear><ListItem>Lint on Change</ListItem></Appear>
+            <Appear><ListItem>Test on Change</ListItem></Appear>
+            <Appear><ListItem>Release on Checkin</ListItem></Appear>
+            <Appear><ListItem>Treat Infrastructure as Code</ListItem></Appear>
+            <Appear><ListItem>Deploy Immutable Infrastructure</ListItem></Appear>
+            <Appear><ListItem>Monitor usage</ListItem></Appear>
+            <Appear><ListItem>Monitor for errors</ListItem></Appear>
+            <Appear><ListItem>Revert on error</ListItem></Appear>
           </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <Heading size={2} lineHeight={1} textColor="secondary">
+            Act III
+          </Heading>
+          <Heading size={4} lineHeight={1} textColor="tertiary">
+            Enlightenment
+          </Heading>
+          <img src={img_firstWay} style={imageStyle} />
+        </Slide>
+        <Slide transition={['fade']} bgColor="secondary">
+          <Heading size={4} textColor="tertiary" caps>
+            The First Way
+          </Heading>
+          <Heading size={6} textColor="tertiary">
+            From Dev to Ops to the customer
+          </Heading>
+          <List textColor="quartenary">  
+            <Appear><ListItem>Make work visible</ListItem></Appear>
+            <Appear><ListItem>Reduce batch sizes work intervals</ListItem></Appear>
+            <Appear><ListItem>Prevent defects from moving downstream</ListItem></Appear>
+            <Appear><ListItem>Continually optimize for global goals</ListItem></Appear>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="secondary">
+          <Heading size={4} textColor="tertiary" caps>
+            The Second Way
+          </Heading>
+          <Heading size={6} textColor="tertiary">
+            From customer to Ops to Dev, etc.
+          </Heading>
+          <List textColor="quartenary">  
+            <Appear><ListItem>Amplified feedback at all stages</ListItem></Appear>
+            <Appear><ListItem>Prevent problems from recurring</ListItem></Appear>
+            <Appear><ListItem>Enable faster detection &amp; recovery</ListItem></Appear>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="secondary">
+          <Heading size={4} textColor="tertiary" caps>
+            The Third Way
+          </Heading>
+          <Heading size={6} textColor="tertiary">
+          Create a generative, high-trust culture
+          </Heading>
+          <List textColor="quartenary">  
+            <Appear><ListItem>Disciplined, scientific experimentation &amp; risk-taking</ListItem></Appear>
+            <Appear><ListItem>Organizational learning</ListItem></Appear>
+            <Appear><ListItem>Curious &amp; colaborative study of success and failure</ListItem></Appear>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <img src={img_sleep} style={imageStyle} />
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <Heading size={2} lineHeight={1} textColor="secondary">
+            Act IV
+          </Heading>
+          <Heading size={4} lineHeight={1} textColor="tertiary">
+            Commencement
+          </Heading>
         </Slide>
         <Slide transition={['fade']} bgColor="secondary" textColor="primary">
           <BlockQuote>
-            <Quote>Example Quote</Quote>
-            <Cite>Author</Cite>
+            <Quote>Avoid the big bang approach..., choosing instead to focus our efforts in a few areas of the organization</Quote>
+            <Cite>The DevOps Handbook</Cite>
+          </BlockQuote>
+        </Slide>
+        <Slide transition={['zoom']} bgColor="primary">
+          <Heading size={4} textColor="tertiary" caps>
+            Measure
+          </Heading>
+          <List>  
+            <Appear><ListItem>Deployment Frequency</ListItem></Appear>
+            <Appear><ListItem>Lead time for changes</ListItem></Appear>
+            <Appear><ListItem>Mean time to recover</ListItem></Appear>
+            <Appear><ListItem>Change failure rate</ListItem></Appear>
+          </List>
+        </Slide>
+        <Slide transition={['zoom']} bgColor="secondary">
+          <Heading size={4} textColor="tertiary" caps>
+           Technical Debt
+          </Heading>
+          <BlockQuote>
+            <Quote>Left unchecked, technical debt will ensure that the only work that gets done is unplanned work!</Quote>
+            <Cite>The Phoenix Project</Cite>
+          </BlockQuote>
+        </Slide>
+        <Slide transition={['zoom']} bgColor="primary">
+          <Heading size={4} textColor="tertiary" caps>
+           Technical Debt
+          </Heading>
+          <List>  
+            <Appear><ListItem>Configuration difficulty</ListItem></Appear>
+            <Appear><ListItem>Issues at scale</ListItem></Appear>
+            <Appear><ListItem>Tightly-coupled components</ListItem></Appear>
+            <Appear><ListItem>Lack of tests</ListItem></Appear>
+            <Appear><ListItem>Lack of documentation</ListItem></Appear>
+            <Appear><ListItem>Parallel development (the merge)</ListItem></Appear>
+            <Appear><ListItem>Compensating post development (workarounds)</ListItem></Appear>
+          </List>
+        </Slide>
+        <Slide transition={['zoom']} bgColor="secondary">
+          <BlockQuote>
+            <Quote>It almost doesn’t matter what you improve.... Why? Because ...entropy guarantees that you are actually getting worse</Quote>
+            <Cite>Mike Rother</Cite>
           </BlockQuote>
         </Slide>
         <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
@@ -330,15 +337,22 @@ export default class Presentation extends React.Component {
             <ListItem>palm by Kevin from the Noun Project</ListItem>
             <ListItem>Fist by Mahmure Alp from the Noun Project</ListItem>
             <ListItem>dead by Ben Davis from the Noun Project</ListItem>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            Credits
+          </Heading>
+          <List>
             <ListItem>Time by Nikita Kozin from the Noun Project</ListItem>
             <ListItem>robot assembly line by Eucalyp from the Noun Project</ListItem>
             <ListItem>Assembly machine by Becris from the Noun Project</ListItem>
             <ListItem>Top Hat by Andrea Mazzini from the Noun Project</ListItem>
             <ListItem>beard by Felipe Alvarado from the Noun Project</ListItem>
             <ListItem>Machine by Dinosoft Labs from the Noun Project</ListItem>
+            <ListItem>drooling by Kaleo from the Noun Project</ListItem>
           </List>
         </Slide>
-        
       </Deck>
     );
   }
