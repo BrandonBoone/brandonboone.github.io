@@ -118,12 +118,6 @@ export default class Presentation extends React.Component {
         <Slide transition={['fade']} bgColor="primary">
           <img src={img_time} style={imageStyle3} />
         </Slide>
-        <Slide transition={['zoom']} bgColor="secondary">
-          <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
-            Team Blockchain Wins!
-          </Heading>
-          <img src={img_winner} style={imageStyle2} />
-        </Slide>
         <Slide transition={['fade']} bgColor="primary">
           <Heading size={6} textColor="secondary" caps>
             Before we start...
