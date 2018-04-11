@@ -20,7 +20,6 @@ import img_winner from './images/winner.png';
 import img_journey from './images/journey.png';
 import img_factory from './images/factory.png';
 import img_shock from './images/shock.png';
-import img_ballMachine from './images/ballMachine.gif';
 import img_accept from './images/accept.png';
 import img_reject from './images/reject.png';
 import img_time from './images/time.png';
@@ -36,8 +35,9 @@ import img_machine9 from './images/machine9.png';
 import img_machine10 from './images/machine10.png';
 import img_firstWay from './images/firstWay.png';
 import img_sleep from './images/sleep.png';
-import img_compiling from './images/compiling.png';
+import img_ballMachine from './images/ballMachine.gif';
 import img_secondWay from './images/secondWay.png';
+import img_visible from './images/visible.png';
 // Import theme
 import createTheme from 'spectacle/lib/themes/default';
 
@@ -107,6 +107,7 @@ export default class Presentation extends React.Component {
             <Appear><ListItem>People</ListItem></Appear>
             <Appear><ListItem>Money</ListItem></Appear>
             <Appear><ListItem>Tools</ListItem></Appear>
+            <Appear><ListItem>Time</ListItem></Appear>
           </List>
         </Slide>
         <Slide transition={['fade']} bgColor="primary">
@@ -200,7 +201,7 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={['fade']} bgColor="primary">
           <Heading size={6} textColor="secondary" caps>
-            Examples
+            Example Improvements
           </Heading>
           <List>
             <Appear><ListItem>Build on Change</ListItem></Appear>
@@ -213,7 +214,7 @@ export default class Presentation extends React.Component {
           </List>
         </Slide><Slide transition={['fade']} bgColor="primary">
           <Heading size={6} textColor="secondary" caps>
-            Examples
+            Example Improvements
           </Heading>
           <List>
             <Appear><ListItem>Monitor Usage</ListItem></Appear>
@@ -221,7 +222,6 @@ export default class Presentation extends React.Component {
             <Appear><ListItem>Revert on Error</ListItem></Appear>
             <Appear><ListItem>Test Resiliancy in Production</ListItem></Appear>
             <Appear><ListItem>Automated Security</ListItem></Appear>
-            <Appear><ListItem>Automated/Immutable Configuration</ListItem></Appear>
             <Appear><ListItem>A/B Testing</ListItem></Appear>
           </List>
         </Slide>
@@ -249,8 +249,7 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
         <Slide transition={['fade']} bgColor="primary">
-          <img src={img_compiling} style={imageStyle3} />
-          <Cite>https://xkcd.com/303/</Cite>
+          <img src={img_visible} style={imageStyle3} />
         </Slide>
         <Slide transition={['fade']} bgColor="secondary">
           <Heading size={4} textColor="tertiary" caps>
@@ -331,7 +330,6 @@ export default class Presentation extends React.Component {
             <Appear><ListItem>Parallel development (the merge)</ListItem></Appear>
             <Appear><ListItem>Compensating post development (workarounds)</ListItem></Appear>
             <Appear><ListItem>Tribal Knowledge</ListItem></Appear>
-            <Appear><ListItem>Brittle components</ListItem></Appear>
             <Appear><ListItem>Any technical thing causing misery</ListItem></Appear>
           </List>
         </Slide>
