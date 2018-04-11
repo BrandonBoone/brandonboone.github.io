@@ -2,6 +2,7 @@
   "name": "devops-presentation",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://brandonboone.github.io/present/devops",
   "dependencies": {
     "react": "^16.3.1",
     "react-dom": "^16.3.1",

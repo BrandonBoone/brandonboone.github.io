@@ -36,6 +36,8 @@ import img_machine9 from './images/machine9.png';
 import img_machine10 from './images/machine10.png';
 import img_firstWay from './images/firstWay.png';
 import img_sleep from './images/sleep.png';
+import img_compiling from './images/compiling.png';
+import img_secondWay from './images/secondWay.png';
 // Import theme
 import createTheme from 'spectacle/lib/themes/default';
 
@@ -211,12 +213,22 @@ export default class Presentation extends React.Component {
             <Appear><ListItem>Lint on Change</ListItem></Appear>
             <Appear><ListItem>Test on Change</ListItem></Appear>
             <Appear><ListItem>Release on Checkin</ListItem></Appear>
-            <Appear><ListItem>Feature flags over branches</ListItem></Appear>
+            <Appear><ListItem>Feature Flags over Branches</ListItem></Appear>
             <Appear><ListItem>Treat Infrastructure as Code</ListItem></Appear>
             <Appear><ListItem>Deploy Immutable Infrastructure</ListItem></Appear>
-            <Appear><ListItem>Monitor usage</ListItem></Appear>
-            <Appear><ListItem>Monitor for errors</ListItem></Appear>
-            <Appear><ListItem>Revert on error</ListItem></Appear>
+          </List>
+        </Slide><Slide transition={['fade']} bgColor="primary">
+          <Heading size={6} textColor="secondary" caps>
+            Examples
+          </Heading>
+          <List>
+            <Appear><ListItem>Monitor Usage</ListItem></Appear>
+            <Appear><ListItem>Monitor for Errors</ListItem></Appear>
+            <Appear><ListItem>Revert on Error</ListItem></Appear>
+            <Appear><ListItem>Test Resiliancy in Production</ListItem></Appear>
+            <Appear><ListItem>Automated Security</ListItem></Appear>
+            <Appear><ListItem>Automated/Immutable Configuration</ListItem></Appear>
+            <Appear><ListItem>A/B Testing</ListItem></Appear>
           </List>
         </Slide>
         <Slide transition={['fade']} bgColor="primary">
@@ -237,10 +249,14 @@ export default class Presentation extends React.Component {
           </Heading>
           <List textColor="quartenary">  
             <Appear><ListItem>Make work visible</ListItem></Appear>
-            <Appear><ListItem>Reduce batch sizes work intervals</ListItem></Appear>
+            <Appear><ListItem>Reduce batch sizes &amp; work intervals</ListItem></Appear>
             <Appear><ListItem>Prevent defects from moving downstream</ListItem></Appear>
             <Appear><ListItem>Continually optimize for global goals</ListItem></Appear>
           </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <img src={img_compiling} style={imageStyle3} />
+          <Cite>https://xkcd.com/303/</Cite>
         </Slide>
         <Slide transition={['fade']} bgColor="secondary">
           <Heading size={4} textColor="tertiary" caps>
@@ -254,6 +270,9 @@ export default class Presentation extends React.Component {
             <Appear><ListItem>Prevent problems from recurring</ListItem></Appear>
             <Appear><ListItem>Enable faster detection &amp; recovery</ListItem></Appear>
           </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <img src={img_secondWay} style={imageStyle3} />
         </Slide>
         <Slide transition={['fade']} bgColor="secondary">
           <Heading size={4} textColor="tertiary" caps>
@@ -307,7 +326,7 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={['zoom']} bgColor="primary">
           <Heading size={4} textColor="tertiary" caps>
-           Technical Debt
+           Signs Of Technical Debt
           </Heading>
           <List>  
             <Appear><ListItem>Configuration difficulty</ListItem></Appear>
@@ -317,6 +336,9 @@ export default class Presentation extends React.Component {
             <Appear><ListItem>Lack of documentation</ListItem></Appear>
             <Appear><ListItem>Parallel development (the merge)</ListItem></Appear>
             <Appear><ListItem>Compensating post development (workarounds)</ListItem></Appear>
+            <Appear><ListItem>Tribal Knowledge</ListItem></Appear>
+            <Appear><ListItem>Brittle components</ListItem></Appear>
+            <Appear><ListItem>Any technical thing causing misery</ListItem></Appear>
           </List>
         </Slide>
         <Slide transition={['zoom']} bgColor="secondary">
@@ -352,7 +374,13 @@ export default class Presentation extends React.Component {
             <ListItem>beard by Felipe Alvarado from the Noun Project</ListItem>
             <ListItem>Machine by Dinosoft Labs from the Noun Project</ListItem>
             <ListItem>drooling by Kaleo from the Noun Project</ListItem>
+            <ListItem>Infinity by Yeong Rong Kim from the Noun Project</ListItem>
           </List>
+        </Slide>
+        <Slide transition={['zoom']} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Demo
+          </Heading>
         </Slide>
       </Deck>
     );
