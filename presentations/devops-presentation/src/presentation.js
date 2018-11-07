@@ -119,25 +119,38 @@ export default class Presentation extends React.Component {
         <Slide transition={['fade']} bgColor="primary">
           <img src={img_time} style={imageStyle3} />
         </Slide>
-        <Slide transition={['fade']} bgColor="primary">
-          <Heading size={6} textColor="secondary" caps>
-            Before we start...
-          </Heading>
-          <List>
-            <Appear><ListItem>Get Funding <i class="far fa-clock"></i></ListItem></Appear>
-            <Appear><ListItem>Assign a Team <i class="far fa-clock"></i></ListItem></Appear>
-            <Appear><ListItem>Study Product Market Fit <i class="far fa-clock"></i></ListItem></Appear>
-            <Appear><ListItem>Choose the Technology <i class="far fa-clock"></i></ListItem></Appear>
-            <Appear><ListItem>Architect the Things <i class="far fa-clock"></i></ListItem></Appear>
-            <Appear><ListItem>Get Approvals  <i class="far fa-clock"></i></ListItem></Appear>
-            <Appear><ListItem>[Insert Other Process]  <i class="far fa-clock"></i><i class="far fa-clock"></i><i class="far fa-clock"></i><i class="far fa-clock"></i><i class="far fa-clock"></i></ListItem></Appear>
-          </List>
-        </Slide>
         <Slide transition={['fade']} bgColor="secondary" textColor="primary">
           <BlockQuote>
             <Quote>DevOps, ...the process required to convert a business hypothesis into a technology-enabled service that delivers value to the customer.</Quote>
             <Cite>The Devops Handbook</Cite>
           </BlockQuote>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <Heading size={6} textColor="secondary" caps>
+            Investments
+          </Heading>
+          <List>
+            <Appear><ListItem>Cost</ListItem></Appear>
+            <Appear><ListItem>Quality</ListItem></Appear>
+            <Appear><ListItem>Speed</ListItem></Appear>
+          </List>
+          <Appear>
+            <div>
+              <Text>"Focusing on cost or quality without considering the impact on flow is... an antipattern for successful IT...."</Text>
+              <Cite>DevOps for the Modern Enterprise, Mirco Hering</Cite>
+            </div>
+          </Appear>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <Heading size={6} textColor="secondary" caps>
+            Is Moving Fast Dangerous?
+          </Heading>
+          <Appear>
+            <div>
+              <Text>The research in the State of DevOps report, "refutes the bimodal IT notion that you have to choose between speed and stability—instead, speed depends on stability, so good IT practices give you both."</Text>
+              <Cite>Accelerate: The Science of Lean Software and DevOps, Nicole Forsgren PhD</Cite>
+            </div>
+          </Appear>
         </Slide>
         <Slide transition={['fade']} bgColor="primary">
           <Heading size={2} lineHeight={1} textColor="secondary">
@@ -201,28 +214,80 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={['fade']} bgColor="primary">
           <Heading size={6} textColor="secondary" caps>
-            Example Improvements
+            CONTINUOUS DELIVERY CAPABILITIES 
           </Heading>
           <List>
-            <Appear><ListItem>Build on Change</ListItem></Appear>
-            <Appear><ListItem>Lint on Change</ListItem></Appear>
-            <Appear><ListItem>Test on Change</ListItem></Appear>
-            <Appear><ListItem>Release on Checkin</ListItem></Appear>
-            <Appear><ListItem>Feature Flags over Branches</ListItem></Appear>
-            <Appear><ListItem>Treat Infrastructure as Code</ListItem></Appear>
-            <Appear><ListItem>Deploy Immutable Infrastructure</ListItem></Appear>
+            <Appear><ListItem>Use version control for all production artifacts</ListItem></Appear>
+            <Appear><ListItem>Automate your deployment process</ListItem></Appear>
+            <Appear><ListItem>Implement continuous integration</ListItem></Appear>
+            <Appear><ListItem>Use trunk-based development methods</ListItem></Appear>
           </List>
-        </Slide><Slide transition={['fade']} bgColor="primary">
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
           <Heading size={6} textColor="secondary" caps>
-            Example Improvements
+            CONTINUOUS DELIVERY CAPABILITIES 
           </Heading>
           <List>
-            <Appear><ListItem>Monitor Usage</ListItem></Appear>
-            <Appear><ListItem>Monitor for Errors</ListItem></Appear>
-            <Appear><ListItem>Revert on Error</ListItem></Appear>
-            <Appear><ListItem>Test Resiliancy in Production</ListItem></Appear>
-            <Appear><ListItem>Automated Security</ListItem></Appear>
-            <Appear><ListItem>A/B Testing</ListItem></Appear>
+            <Appear><ListItem>Implement test automation</ListItem></Appear>
+            <Appear><ListItem>Support test data management</ListItem></Appear>
+            <Appear><ListItem>Shift left on security</ListItem></Appear>
+            <Appear><ListItem>Implement continuous delivery (CD). </ListItem></Appear>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <Heading size={6} textColor="secondary" caps>
+            ARCHITECTURE CAPABILITIES
+          </Heading>
+          <List>
+            <Appear><ListItem>Use a loosely coupled architecture</ListItem></Appear>
+            <Appear><ListItem>Architect for empowered teams</ListItem></Appear>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <Heading size={6} textColor="secondary" caps>
+            PRODUCT AND PROCESS CAPABILITIES
+          </Heading>
+          <List>
+            <Appear><ListItem>Gather and implement customer feedback</ListItem></Appear>
+            <Appear><ListItem>Make the flow of work visible through the value stream</ListItem></Appear>
+            <Appear><ListItem>Work in small batches</ListItem></Appear>
+            <Appear><ListItem>Foster and enable team experimentation</ListItem></Appear>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <Heading size={6} textColor="secondary" caps>
+            LEAN MANAGEMENT AND MONITORING CAPABILITIES
+          </Heading>
+          <List>
+            <Appear><ListItem>Have a lightweight change approval processes</ListItem></Appear>
+            <Appear><ListItem>Monitor across application and infrastructure to inform business decisions</ListItem></Appear>
+            <Appear><ListItem>Check system health proactively</ListItem></Appear>
+            <Appear><ListItem>Improve processes and manage work with work-in-process (WIP) limits</ListItem></Appear>
+            <Appear><ListItem>Visualize work to monitor quality and communicate throughout the team</ListItem></Appear>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <Heading size={6} textColor="secondary" caps>
+            LEAN MANAGEMENT AND MONITORING CAPABILITIES
+          </Heading>
+          <List>
+            <Appear><ListItem>Have a lightweight change approval processes</ListItem></Appear>
+            <Appear><ListItem>Monitor across application and infrastructure to inform business decisions</ListItem></Appear>
+            <Appear><ListItem>Check system health proactively</ListItem></Appear>
+            <Appear><ListItem>Improve processes and manage work with work-in-process (WIP) limits</ListItem></Appear>
+            <Appear><ListItem>Visualize work to monitor quality and communicate throughout the team</ListItem></Appear>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary">
+          <Heading size={6} textColor="secondary" caps>
+            CULTURAL CAPABILITIES
+          </Heading>
+          <List>
+            <Appear><ListItem>Support a generative culture</ListItem></Appear>
+            <Appear><ListItem>Encourage and support learning</ListItem></Appear>
+            <Appear><ListItem>Support and facilitate collaboration among teams</ListItem></Appear>
+            <Appear><ListItem>Provide resources and tools that make work meaningful</ListItem></Appear>
+            <Appear><ListItem>Support or embody transformational leadership</ListItem></Appear>
           </List>
         </Slide>
         <Slide transition={['fade']} bgColor="primary">
