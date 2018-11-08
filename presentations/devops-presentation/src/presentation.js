@@ -106,7 +106,6 @@ export default class Presentation extends React.Component {
           <List>
             <Appear><ListItem>People</ListItem></Appear>
             <Appear><ListItem>Money</ListItem></Appear>
-            <Appear><ListItem>Tools</ListItem></Appear>
             <Appear><ListItem>Time</ListItem></Appear>
           </List>
         </Slide>
@@ -127,7 +126,7 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={['fade']} bgColor="primary">
           <Heading size={6} textColor="secondary" caps>
-            Investments
+            Process Optimization
           </Heading>
           <List>
             <Appear><ListItem>Cost</ListItem></Appear>
@@ -212,6 +211,17 @@ export default class Presentation extends React.Component {
             <Cite>Gene Kim</Cite>
           </BlockQuote>
         </Slide>
+        <Slide transition={['zoom']} bgColor="primary">
+          <Heading size={4} textColor="tertiary" caps>
+            Understand Success
+          </Heading>
+          <List>  
+            <Appear><ListItem>Deployment Frequency</ListItem></Appear>
+            <Appear><ListItem>Lead time for changes</ListItem></Appear>
+            <Appear><ListItem>Mean time to recover</ListItem></Appear>
+            <Appear><ListItem>Change failure rate</ListItem></Appear>
+          </List>
+        </Slide>
         <Slide transition={['fade']} bgColor="primary">
           <Heading size={6} textColor="secondary" caps>
             CONTINUOUS DELIVERY CAPABILITIES 
@@ -252,18 +262,6 @@ export default class Presentation extends React.Component {
             <Appear><ListItem>Make the flow of work visible through the value stream</ListItem></Appear>
             <Appear><ListItem>Work in small batches</ListItem></Appear>
             <Appear><ListItem>Foster and enable team experimentation</ListItem></Appear>
-          </List>
-        </Slide>
-        <Slide transition={['fade']} bgColor="primary">
-          <Heading size={6} textColor="secondary" caps>
-            LEAN MANAGEMENT AND MONITORING CAPABILITIES
-          </Heading>
-          <List>
-            <Appear><ListItem>Have a lightweight change approval processes</ListItem></Appear>
-            <Appear><ListItem>Monitor across application and infrastructure to inform business decisions</ListItem></Appear>
-            <Appear><ListItem>Check system health proactively</ListItem></Appear>
-            <Appear><ListItem>Improve processes and manage work with work-in-process (WIP) limits</ListItem></Appear>
-            <Appear><ListItem>Visualize work to monitor quality and communicate throughout the team</ListItem></Appear>
           </List>
         </Slide>
         <Slide transition={['fade']} bgColor="primary">
@@ -362,17 +360,7 @@ export default class Presentation extends React.Component {
             <Cite>The DevOps Handbook</Cite>
           </BlockQuote>
         </Slide>
-        <Slide transition={['zoom']} bgColor="primary">
-          <Heading size={4} textColor="tertiary" caps>
-            Measure
-          </Heading>
-          <List>  
-            <Appear><ListItem>Deployment Frequency</ListItem></Appear>
-            <Appear><ListItem>Lead time for changes</ListItem></Appear>
-            <Appear><ListItem>Mean time to recover</ListItem></Appear>
-            <Appear><ListItem>Change failure rate</ListItem></Appear>
-          </List>
-        </Slide>
+        
         <Slide transition={['zoom']} bgColor="secondary">
           <Heading size={4} textColor="tertiary" caps>
            Technical Debt
